@@ -7,3 +7,6 @@ EXAM RANK          |  GRADE		|
 |RANK 04  |              |
 |RANK 05  |              |
 |RANK 06  |              |
+
+
+More info at [42-exams](https://github.com/pasqualerossi/42-Exams) thanks to [Pasquale Rossi](https://github.com/pasqualerossi)
