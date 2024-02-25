@@ -1,4 +1,4 @@
-## Exam common core
+## Exam Common Core
 
 EXAM RANK          |  GRADE		|
 |-------------------------|:-------------------------:|
