@@ -30,10 +30,7 @@ SpellBook& SpellBook::operator=(const SpellBook &src)
 SpellBook::~SpellBook()
 {
 	for (std::map<std::string, ASpell*>::iterator it = _Book.begin(); it != _Book.end(); it++)
-	{
 		delete it->second;
-		// _Book.erase(it);
-	}
 	_Book.clear();
 }
 
@@ -48,10 +45,7 @@ void	SpellBook::forgetSpell(const std::string &spellname)
 	for (std::map<std::string, ASpell*>::iterator it = _Book.begin(); it != _Book.end(); it++)
 	{
 		if (it->first == spellname)
-		{
 			delete it->second;
-			// _Book.erase(it);
-		}
 	}
 }
 
@@ -62,8 +56,6 @@ ASpell*	SpellBook::createSpell(const std::string &spellname)
 		if (it->first == spellname)
 			return(it->second->clone());
 	}
-	// if (_Book.find(spellname) != _Book.end())
-	// 	return (_Book[spellname]->clone());
 	return (NULL);
 }
 
