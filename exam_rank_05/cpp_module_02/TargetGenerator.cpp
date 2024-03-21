@@ -30,10 +30,7 @@ TargetGenerator& TargetGenerator::operator=(const TargetGenerator &src)
 TargetGenerator::~TargetGenerator()
 {
 	for (std::map<std::string, ATarget*>::iterator it = _list.begin(); it != _list.end(); it++)
-	{
 		delete it->second;
-		// _list.erase();
-	}
 	_list.clear();
 }
 
@@ -48,10 +45,7 @@ void	TargetGenerator::forgetTargetType(const std::string &targettype)
 	for (std::map<std::string, ATarget*>::iterator it = _list.begin(); it != _list.end(); it++)
 	{
 		if (it->first == targettype)
-		{
 			delete it->second;
-			// _list.erase();
-		}
 	}
 }
 
