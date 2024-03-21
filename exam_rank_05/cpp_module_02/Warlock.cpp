@@ -74,7 +74,5 @@ void Warlock::launchSpell(std::string spellname, const ATarget &target)
 	std::map<std::string, ASpell*>::iterator it = copy.find(spellname);
 
 	if (it != copy.end())
-	{
 		it->second->launch(target);
-	}
 }
